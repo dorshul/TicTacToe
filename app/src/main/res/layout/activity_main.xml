@@ -7,13 +7,65 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <GridLayout
+        android:id="@+id/gridLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_gravity="center"
+        android:columnCount="3"
+        android:rowCount="3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.302">
+
+        <ImageView
+            android:id="@+id/image00"
+            style="@style/GameImageView" />
+
+        <ImageView
+            android:id="@+id/image01"
+            style="@style/GameImageView" />
+
+        <ImageView
+            android:id="@+id/image02"
+            style="@style/GameImageView" />
+
+        <ImageView
+            android:id="@+id/image10"
+            style="@style/GameImageView" />
+
+        <ImageView
+            android:id="@+id/image11"
+            style="@style/GameImageView" />
+
+        <ImageView
+            android:id="@+id/image12"
+            style="@style/GameImageView" />
+
+        <ImageView
+            android:id="@+id/image20"
+            style="@style/GameImageView" />
+
+        <ImageView
+            android:id="@+id/image21"
+            style="@style/GameImageView" />
+
+        <ImageView
+            android:id="@+id/image22"
+            style="@style/GameImageView" />
+    </GridLayout>
+
+    <Button
+        android:id="@+id/restartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play Again"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
