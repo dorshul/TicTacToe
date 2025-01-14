@@ -31,9 +31,9 @@ class MainActivity : AppCompatActivity() {
         }
         // Initialize the 3x3 board
         board = arrayOf(
-            arrayOf(findViewById(R.id.image00), findViewById(R.id.image01), findViewById(R.id.image02)),
-            arrayOf(findViewById(R.id.image10), findViewById(R.id.image11), findViewById(R.id.image12)),
-            arrayOf(findViewById(R.id.image20), findViewById(R.id.image21), findViewById(R.id.image22))
+            arrayOf(findViewById(R.id.main_activity_image00), findViewById(R.id.main_activity_image01), findViewById(R.id.main_activity_image02)),
+            arrayOf(findViewById(R.id.main_activity_image10), findViewById(R.id.main_activity_image11), findViewById(R.id.main_activity_image12)),
+            arrayOf(findViewById(R.id.main_activity_image20), findViewById(R.id.main_activity_image21), findViewById(R.id.main_activity_image22))
         )
 
         // Set click listeners for each ImageView
@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         // Set reset button
-        findViewById<View>(R.id.restartButton).setOnClickListener {
+        findViewById<View>(R.id.main_activity_restart_button).setOnClickListener {
             resetBoard()
         }
     }
@@ -73,6 +73,6 @@ class MainActivity : AppCompatActivity() {
         }
         currentPlayer = "X"
         movesCount = 0
-        findViewById<View>(R.id.restartButton).visibility = View.GONE
+        findViewById<View>(R.id.main_activity_restart_button).visibility = View.GONE
     }
 }

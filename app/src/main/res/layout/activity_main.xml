@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <GridLayout
-        android:id="@+id/gridLayout"
+        android:id="@+id/main_activity_grid_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -21,44 +21,44 @@
         app:layout_constraintVertical_bias="0.302">
 
         <ImageView
-            android:id="@+id/image00"
+            android:id="@+id/main_activity_image00"
             style="@style/GameImageView" />
 
         <ImageView
-            android:id="@+id/image01"
+            android:id="@+id/main_activity_image01"
             style="@style/GameImageView" />
 
         <ImageView
-            android:id="@+id/image02"
+            android:id="@+id/main_activity_image02"
             style="@style/GameImageView" />
 
         <ImageView
-            android:id="@+id/image10"
+            android:id="@+id/main_activity_image10"
             style="@style/GameImageView" />
 
         <ImageView
-            android:id="@+id/image11"
+            android:id="@+id/main_activity_image11"
             style="@style/GameImageView" />
 
         <ImageView
-            android:id="@+id/image12"
+            android:id="@+id/main_activity_image12"
             style="@style/GameImageView" />
 
         <ImageView
-            android:id="@+id/image20"
+            android:id="@+id/main_activity_image20"
             style="@style/GameImageView" />
 
         <ImageView
-            android:id="@+id/image21"
+            android:id="@+id/main_activity_image21"
             style="@style/GameImageView" />
 
         <ImageView
-            android:id="@+id/image22"
+            android:id="@+id/main_activity_image22"
             style="@style/GameImageView" />
     </GridLayout>
 
     <Button
-        android:id="@+id/restartButton"
+        android:id="@+id/main_activity_restart_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Play Again"
@@ -66,6 +66,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/main_activity_grid_layout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
