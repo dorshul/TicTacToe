@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         // Update the UI
-        imageView.setImageResource(if (gameLogic.currentPlayer == "X") R.drawable.o else R.drawable.x)
+        imageView.setImageResource(if (gameLogic.currentPlayer == "X") R.drawable.x else R.drawable.o)
 
         if (gameLogic.checkWin(cell.row, cell.col)) {
             endGame("${gameLogic.currentPlayer} wins!")
