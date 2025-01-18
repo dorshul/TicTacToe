@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
 import android.widget.Toast
-444440=import androidx.activity.enableEdgeToEdge
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.tictactoe.logic.GameLogic
 import com.example.tictactoe.model.Cell
@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         cellToImageViewMap = mutableMapOf()
 
         val board = gameLogic.getBoard()
-        val ids = arrayOf(
+        val ids = arrayOf<Array<View>>(
             arrayOf(findViewById(R.id.main_activity_image00), findViewById(R.id.main_activity_image01), findViewById(R.id.main_activity_image02)),
             arrayOf(findViewById(R.id.main_activity_image10), findViewById(R.id.main_activity_image11), findViewById(R.id.main_activity_image12)),
             arrayOf(findViewById(R.id.main_activity_image20), findViewById(R.id.main_activity_image21), findViewById(R.id.main_activity_image22))
@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         for (i in board.indices) {
             for (j in board[i].indices) {
                 val cell = board[i][j]
-                val imageView = findViewById<ImageView>(ids[i][j])
+                val imageView = ids[i][j] as ImageView
                 cellToImageViewMap[cell] = imageView
 
                 imageView.setOnClickListener {
